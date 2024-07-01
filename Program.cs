@@ -16,6 +16,8 @@ namespace WordToPDFConverter
             var fileContent = string.Empty;
             var filePath = string.Empty;
 
+            Console.WriteLine("Select Microsoft Word file...");
+
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 bool isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
@@ -91,7 +93,7 @@ namespace WordToPDFConverter
                         WdExportOptimizeFor.wdExportOptimizeForPrint,
                         WdExportRange.wdExportAllDocument
                     );
-                    Console.WriteLine("Successfully converted");
+                    Console.WriteLine("Successfully converted.");
                 }
                 catch (Exception ex)
                 {
@@ -106,8 +108,19 @@ namespace WordToPDFConverter
                 return pdfPath;
             }
 
-            CreatePDF(filePath, outputPath);
-            Console.ReadLine();
+            if (filePath.Length == 0)
+            {
+                Environment.Exit(0);
+                Console.WriteLine("Exiting...");
+            }
+            else
+            {
+                Console.WriteLine("Converting...");
+                CreatePDF(filePath, outputPath);
+                Console.WriteLine("Press Enter to continue.");
+                Console.ReadLine();
+            }
+
         }
     }
 }
