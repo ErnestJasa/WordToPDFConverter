@@ -1,0 +1,7 @@
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\WordToPDFConverter.exe
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\WordToPDFConverter.dll
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\WordToPDFConverter.deps.json
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\WordToPDFConverter.runtimeconfig.json
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\WordToPDFConverter.pdb
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\Microsoft.Office.Interop.Word.dll
+D:\WordToPDFConverter\WordToPDFConverter\bin\Release\net8.0-windows\publish\Office.dll
